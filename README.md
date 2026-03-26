@@ -7,7 +7,7 @@ Repositorio del grupo X para el proyecto del ramo *Proyecto Inicial (IWG400)* â€
 | Nombre y Apellido | Usuario GitHub | Correo USM               | Rol USM      |
 | ----------------- | -------------- | ------------------------ | ------------ |
 | Vicente Pavez     | @xentopg       | vpavezg@usm.cl           | 202510156-4  |
-| Nombre2 Apellido2 | @usuario2      | nombre2.apellido2@usm.cl | 200000000000 |
+| Francisco Navarro | @usuario2      | fnavarromoy@usm.cl@usm.cl | 200000000000 |
 | Nombre3 Apellido3 | @usuario3      | nombre3.apellido3@usm.cl | 200000000000 |
 | Nombre4 Apellido4 | @usuario4      | nombre4.apellido4@usm.cl | 200000000000 |
 
