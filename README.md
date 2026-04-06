@@ -61,8 +61,8 @@ No hay certeza de que el prototipo pueda aguantar condiciones climáticas como p
 El prototipo no cuenta con una muy larga duración, por lo que queda como desafío a futuro la optimización de la batería en general. 
 
 -Estado en tiempo real 
-
 Otro desafío para resolver a futuro sería la vinculación del candado con una app, en la cual se pueda ver la batería restante, la gestión de las huellas, entre otras.
+
 ---
 
 ## 🛠️ Tecnologías y herramientas utilizadas
