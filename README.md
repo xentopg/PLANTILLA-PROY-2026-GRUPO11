@@ -72,7 +72,7 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
 - Microcontroladores
   - Arduino UNO Q.
 - Sensores
-Sensor de huella Dactilar AS608, Sensor de vibración SW-420, Servomotor MG996R, Lector NFC PN532 / PN532 [RFID & NFC Reader/Writer].
+  - Sensor de huella Dactilar AS608, Sensor de vibración SW-420, Servomotor MG996R, Lector NFC PN532 / PN532 [RFID & NFC Reader/Writer].
 ---
 
 ## 🗂️ Estructura del repositorio
