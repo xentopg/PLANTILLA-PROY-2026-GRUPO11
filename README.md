@@ -1,15 +1,15 @@
 # PROY-2026-GRUPOX
 
-Repositorio del grupo X para el proyecto del ramo *Proyecto Inicial (IWG400)* – 2026.
+Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* – 2026.
 
 ## 👥 Integrantes del grupo
 
-| Nombre y Apellido | Usuario GitHub | Correo USM               | Rol USM      |
-| ----------------- | -------------- | ------------------------ | ------------ |
-| Vicente Pavez     | @xentopg       | vpavezg@usm.cl           | 202510156-4  |
-| Francisco Navarro | @Francisco-Navarro-Moyano      | fnavarromoy@usm.cl@usm.cl | 202630038-2 |
-| Sebastián Martínez| @sseba07      | smartinezt@usm.cl | 202630019-6 |
-| Nombre4 Apellido4 | @usuario4      | nombre4.apellido4@usm.cl | 200000000000 |
+| Nombre y Apellido | Usuario GitHub            | Correo USM               | Rol USM      |
+| ----------------- | ------------------------- | ------------------------ | ------------ |
+| Vicente Pavez     | @xentopg                  | vpavezg@usm.cl           | 202510156-4  |
+| Francisco Navarro | @Francisco-Navarro-Moyano | fnavarromoy@usm.cl@usm.cl| 202630038-2  |
+| Sebastián Martínez| @sseba07                  | smartinezt@usm.cl        | 202630019-6  |
+| Nombre4 Apellido4 | @usuario4                 | nombre4.apellido4@usm.cl | 200000000000 |
 
 ## 📝 Descripción breve del proyecto
 
@@ -74,7 +74,7 @@ Repositorio del grupo X para el proyecto del ramo *Proyecto Inicial (IWG400)* �
 
 ## 📅 Cronograma de trabajo
 
-[Carta Gantt](https://google.com)
+[Carta Gantt](https://usmcl-my.sharepoint.com/:i:/r/personal/vpavezg_usm_cl/Documents/Carta%20Gantt%20Xentlock%201.jpg?csf=1&web=1&e=6PnHd7)
 
 ---
 
