@@ -68,11 +68,11 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
 ## 🛠️ Tecnologías y herramientas utilizadas
 
 - Lenguaje(s) de programación:
-  - Ej: Python, JavaScript, C++
+  - Python, C++.
 - Microcontroladores
-  - Arduino UNO Q, ESP32
+  - Arduino UNO Q.
 - Sensores
-
+Sensor de huella Dactilar AS608, Sensor de vibración SW-420, Servomotor MG996R, Lector NFC PN532 / PN532 [RFID & NFC Reader/Writer].
 ---
 
 ## 🗂️ Estructura del repositorio
