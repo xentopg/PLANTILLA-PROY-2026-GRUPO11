@@ -28,8 +28,41 @@ Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* �
 
 ## 🧩 Alcance del proyecto
 
-> *Definir qué aspectos cubre el proyecto y qué queda fuera del alcance (limitaciones).*
+> ¿Qué cubre? 
 
+-Autenticación dual 
+
+Cuenta con la implementación de un sistema de apertura tanto con huella dactilar como con NFC. 
+
+-Gestión de usuarios 
+
+Capacidad de registrar, almacenar y validar diferentes huellas dactilares y etiquetas NFC autorizadas en la memoria local del sistema. 
+
+-Sistema de Seguridad activa 
+
+Integración de un sensor de vibración para detectar intentos de manipulación forzada y activar una alarma mediante el buzzer integrado. 
+
+-Autonomía energética 
+
+Powerbank de alta capacidad para asegurar la portabilidad del prototipo y su funcionamiento inalámbrico. 
+
+-Recarga de batería 
+
+La recarga será mediante pines magnéticos, lo que soluciona problemas como USB killer, humedad o suciedad en el puerto USB. 
+
+> ¿Qué limitaciones presenta? 
+
+-Resistencia climática 
+
+No hay certeza de que el prototipo pueda aguantar condiciones climáticas como por ejemplo la lluvia. 
+
+-Duración de la batería 
+
+El prototipo no cuenta con una muy larga duración, por lo que queda como desafío a futuro la optimización de la batería en general. 
+
+-Estado en tiempo real 
+
+Otro desafío para resolver a futuro sería la vinculación del candado con una app, en la cual se pueda ver la batería restante, la gestión de las huellas, entre otras.
 ---
 
 ## 🛠️ Tecnologías y herramientas utilizadas
