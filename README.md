@@ -7,13 +7,13 @@ Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* �
 | Nombre y Apellido | Usuario GitHub            | Correo USM               | Rol USM      |
 | ----------------- | ------------------------- | ------------------------ | ------------ |
 | Vicente Pavez     | @xentopg                  | vpavezg@usm.cl           | 202510156-4  |
-| Francisco Navarro | @Francisco-Navarro-Moyano | fnavarromoy@usm.cl@usm.cl| 202630038-2  |
+| Francisco Navarro | @Francisco-Navarro-Moyano | fnavarromoy@usm.cl       | 202630038-2  |
 | Sebastián Martínez| @sseba07                  | smartinezt@usm.cl        | 202630019-6  |
 | Nombre4 Apellido4 | @usuario4                 | nombre4.apellido4@usm.cl | 200000000000 |
 
 ## 📝 Descripción breve del proyecto
 
-> *Aquí va una descripción general del proyecto, incluyendo su propósito, contexto dentro del curso y motivación.*
+> El Xentlock, es un dispositivo capaz de mantener seguras tus pertenencias, siendo este completamente digital, sin ranuras a llaves corrientes, solo es posible desbloquearlo mediante NFC o Huella digital. El objetivo de este proyecto es reforzar la seguridad de un candado convencional, integrando funciones que este originalmente no posee y eliminando sus vulnerabilidades. Con las tecnologías utilizadas, buscamos resolver las necesidades de seguridad de la gente, con un dispositivo que no fuera complicado de usar, pero más completo que un candado común y corriente. 
 
 ---
 
