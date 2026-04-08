@@ -13,16 +13,24 @@ Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* �
 
 ## 📝 Descripción breve del proyecto
 
-> El Xentlock, es un dispositivo capaz de mantener seguras tus pertenencias, siendo este completamente digital, sin ranuras a llaves corrientes, solo es posible desbloquearlo mediante NFC o Huella digital. El objetivo de este proyecto es reforzar la seguridad de un candado convencional, integrando funciones que este originalmente no posee y eliminando sus vulnerabilidades. Con las tecnologías utilizadas, buscamos resolver las necesidades de seguridad de la gente, con un dispositivo que no fuera complicado de usar, pero más completo que un candado común y corriente. 
+> Xentlock, es un dispositivo capaz de mantener seguras tus pertenencias, siendo este completamente digital, sin ranuras a llaves corrientes, solo es posible desbloquearlo mediante NFC o Huella digital. El objetivo de este proyecto es reforzar la seguridad de un candado convencional, integrando funciones que este originalmente no posee y eliminando sus vulnerabilidades. Con las tecnologías utilizadas, buscamos resolver las necesidades de seguridad de la gente, con un dispositivo que no fuera complicado de usar, pero más completo que un candado común y corriente. 
 
 ---
 
 ## 🎯 Objetivos
 
 - Objetivo general:
-  - *Describir el objetivo principal del proyecto.*
+  -Nuestro objetivo principal es rediseñar el candado convencional e implementar un sistema de control de acceso inteligente (utilizando Arduino Uno Q) que integre tecnologías de identificación para garantizar la mayor seguridad posible para un dispositivo de cierre físico (el candado), también incluyendo un sistema de alerta en caso de golpe o abertura no autorizada. 
 - Objetivos específicos:
-  - *Listar objetivos concretos que permitirán alcanzar el objetivo general.*
+  - Obtener los componentes necesarios 
+  - Aprender a utilizar Arduino Lab 
+  - Crear esquema de conexiones 
+  - Realizar las conexiones correctamente para evitar percances 
+  - Configurar los sensores por separado (NFC, Huella digital, vibración, buzzer) 
+  - Ir integrando los sensores a un sistema más complejo hasta completar el circuito final 
+  - Utilizar la powerbank como fuente de energía para el dispositivo 
+  - Optimizar la fuente de energía 
+  - Implementación de carga por pines magnéticos (si es que queda tiempo(opcional)) 
 
 ---
 
@@ -31,34 +39,27 @@ Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* �
 > ¿Qué cubre? 
 
 -Autenticación dual 
-
-Cuenta con la implementación de un sistema de apertura tanto con huella dactilar como con NFC. 
+(Cuenta con la implementación de un sistema de apertura tanto con huella dactilar como con NFC) 
 
 -Gestión de usuarios 
-
-Capacidad de registrar, almacenar y validar diferentes huellas dactilares y etiquetas NFC autorizadas en la memoria local del sistema. 
+(Capacidad de registrar, almacenar y validar diferentes huellas dactilares y etiquetas NFC autorizadas en la memoria local del sistema) 
 
 -Sistema de Seguridad activa 
-
-Integración de un sensor de vibración para detectar intentos de manipulación forzada y activar una alarma mediante el buzzer integrado. 
+(Integración de un sensor de vibración para detectar intentos de manipulación forzada y activar una alarma mediante el buzzer integrado)
 
 -Autonomía energética 
-
-Powerbank de alta capacidad para asegurar la portabilidad del prototipo y su funcionamiento inalámbrico. 
+(Powerbank de alta capacidad para asegurar la portabilidad del prototipo y su funcionamiento inalámbrico) 
 
 -Recarga de batería 
-
-La recarga será mediante pines magnéticos, lo que soluciona problemas como USB killer, humedad o suciedad en el puerto USB. 
+(La recarga será mediante pines magnéticos, lo que soluciona problemas como USB killer, humedad o suciedad en el puerto USB) 
 
 > ¿Qué limitaciones presenta? 
 
 -Resistencia climática 
-
-No hay certeza de que el prototipo pueda aguantar condiciones climáticas como por ejemplo la lluvia. 
+(No hay certeza de que el prototipo pueda aguantar condiciones climáticas como por ejemplo la lluvia) 
 
 -Duración de la batería 
-
-El prototipo no cuenta con una muy larga duración, por lo que queda como desafío a futuro la optimización de la batería en general. 
+(El prototipo no cuenta con una muy larga duración, por lo que queda como desafío a futuro la optimización de la batería en general)
 
 -Estado en tiempo real 
 Otro desafío para resolver a futuro sería la vinculación del candado con una app, en la cual se pueda ver la batería restante, la gestión de las huellas, entre otras.
@@ -107,7 +108,7 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
 
 ## 📅 Cronograma de trabajo
 
-[Carta Gantt](https://usmcl-my.sharepoint.com/:i:/r/personal/vpavezg_usm_cl/Documents/Carta%20Gantt%20Xentlock%201.jpg?csf=1&web=1&e=6PnHd7)
+[Carta Gantt](https://usmcl-my.sharepoint.com/:x:/g/personal/vpavezg_usm_cl/IQCs5WCaG1q5TqvqJzvkhy9-AWukJlHdecXTcuYyGaN8mHM?e=p2jSog)
 
 ---
 
