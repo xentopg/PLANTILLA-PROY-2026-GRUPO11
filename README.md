@@ -1,4 +1,4 @@
-# PROY-2026-GRUPOX
+# PROY-2026-GRUPO 11
 
 Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* – 2026.
 
@@ -9,7 +9,6 @@ Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* �
 | Vicente Pavez     | @xentopg                  | vpavezg@usm.cl           | 202510156-4  |
 | Francisco Navarro | @Francisco-Navarro-Moyano | fnavarromoy@usm.cl       | 202630038-2  |
 | Sebastián Martínez| @sseba07                  | smartinezt@usm.cl        | 202630019-6  |
-| Nombre4 Apellido4 | @usuario4                 | nombre4.apellido4@usm.cl | 200000000000 |
 
 ## 📝 Descripción breve del proyecto
 
