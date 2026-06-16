@@ -7,7 +7,6 @@ Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* �
 | Nombre y Apellido | Usuario GitHub            | Correo USM               | Rol USM      |
 | ----------------- | ------------------------- | ------------------------ | ------------ |
 | Vicente Pavez     | @xentopg                  | vpavezg@usm.cl           | 202510156-4  |
-| Francisco Navarro | @Francisco-Navarro-Moyano | fnavarromoy@usm.cl       | 202630038-2  |
 | Sebastián Martínez| @sseba07                  | smartinezt@usm.cl        | 202630019-6  |
 
 ## 📝 Descripción breve del proyecto
@@ -92,7 +91,7 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
 ## 🚀 Instrucciones de Instalacion y Uso
 
 
-1. **Clonar el repositorio:** `git clone ...`
+1. **Clonar el repositorio:** `git clone https://github.com/xentopg/PLANTILLA-PROY-2026-GRUPO11.git`
 2. **Dependencias:** Listar qué librerías necesitan (ej: `pip install -r requirements.txt` o librerías de Arduino).
 3. **Ejecución:** Cómo se corre el código principal.
 
