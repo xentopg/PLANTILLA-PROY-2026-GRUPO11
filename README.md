@@ -11,7 +11,7 @@ Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* �
 
 ## 📝 Descripción breve del proyecto
 
-> Xentlock, es un dispositivo capaz de mantener seguras tus pertenencias, siendo este completamente digital, sin ranuras a llaves corrientes, solo es posible desbloquearlo mediante NFC o Huella digital. El objetivo de este proyecto es reforzar la seguridad de un candado convencional, integrando funciones que este originalmente no posee y eliminando sus vulnerabilidades. Con las tecnologías utilizadas, buscamos resolver las necesidades de seguridad de la gente, con un dispositivo que no fuera complicado de usar, pero más completo que un candado común y corriente. 
+> Xentlock, es un dispositivo capaz de mantener seguras tus pertenencias, siendo este completamente digital, sin ranuras a llaves corrientes, solo es posible desbloquearlo mediante clave NFC, Huella digital y Página web. El objetivo de este proyecto es reforzar la seguridad de un candado convencional, integrando funciones que un candado convencional no posee y eliminando sus vulnerabilidades físicas. Con las tecnologías utilizadas buscamos darle una opción más fresca y renovada a las personas ofreciendoles una alternativa extra, un dispositivo que no fuera complicado de usar y que poseea más de un método de desbloqueo en caso de emergencias. 
 
 ---
 
@@ -24,10 +24,10 @@ Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* �
   - Aprender a utilizar Arduino Lab 
   - Crear esquema de conexiones 
   - Realizar las conexiones correctamente para evitar percances 
-  - Configurar los sensores por separado (NFC, Huella digital, vibración, buzzer) 
+  - Configurar los sensores y piezas por separado (NFC, Huella digital, microservomotor, buzzer) 
   - Ir integrando los sensores a un sistema más complejo hasta completar el circuito final 
   - Utilizar la powerbank como fuente de energía para el dispositivo 
-  - Optimizar la fuente de energía 
+  - compatibilizar la fuente de energía con el Arduino UNO Q
   - Implementación de carga por pines magnéticos (si es que queda tiempo(opcional)) 
 
 ---
@@ -71,13 +71,15 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
 - Microcontroladores
   - Arduino UNO Q.
 - Sensores
-  - Sensor de huella Dactilar AS608, Sensor de vibración SW-420, Servomotor MG996R, Lector NFC PN532 / PN532 [RFID & NFC Reader/Writer].
+  - Sensor de huella Dactilar AS608, Sensor NFC PN532 
+- componentes
+  - Buzzer, led(verde), Servomotor MG996R, resistencia 100ohm
 ---
 
 ## 🗂️ Estructura del repositorio
 
 ```
-/PROY-2026-GRUPOX
+/PROY-2026-GRUPO11
 │
 ├── docs/               # Documentación general y reportes
 ├── src/                # Código fuente del proyecto
@@ -119,3 +121,6 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
 ## 📌 Notas adicionales
 
 > *Espacio para dejar cualquier comentario útil, como pendientes, acuerdos del grupo, consideraciones especiales, etc.*
+
+Como equipo consideramos que el prototipo creado es consecuente con lo planteado y es un gran avance en nuestra experiencia ya que logramos aprender bastante trbajando en ello, pese a los contratiempos y dificultades que enfrentamos como la falta de conocimiento acerca de electrónica y programación y el abandono de uno de nuestros compañeros, como equipo nos sentimos realizados con nuestro proyecto.
+Aún así hay cosas tuvimos que dejar en el tintero por falta de tiempo, como por ejemplo implementar un modo que ahorre más energía e implementar una carga por pines magnéticos para evitar el uso de "USB killer" contra Xentlock, por parte de la web sería implementar metodo de cuentas y usuarios para que sea seguro abrir la página web a una red pública y de esta manera no sería necesario estar conectado a la misma red además de no perder control o seguridad al momento de utilizar el candado 
