@@ -100,7 +100,7 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
 ---
 
 ## 📐 Diseño del Sistema
-![Diagrama de Conexiones](./assets/diagrama_conexiones.png)
+![Diagrama de Conexiones](./PROY-2026-GRUPO11/assets/diagrama_conexiones.png)
 
 *Explicacion grafica de como es la conexion entre el microcontrolador y los sensores*
 
