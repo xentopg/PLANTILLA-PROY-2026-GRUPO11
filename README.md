@@ -114,7 +114,31 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
 
 ## 📚 Bibliografía
 
-[Enlace](https://google.com)
+1. DroneBot Workshop. (2026). *Arduino UNO Q and Arduino App Lab v0.3.2* [Video]. YouTube. [https://youtu.be/6sGz3fy_xT4](https://youtu.be/6sGz3fy_xT4)
+
+2. Arduino. (2026). *WebUI - HTML Brick Documentation*. Arduino App Lab v0.7.0. Documentación interna del panel del AppLab.
+
+3. Arduino. (2026). *Ejemplo oficial blink-with-ui*. Arduino App Lab v0.7.0. Ruta interna: `/var/lib/arduino-app-cli/examples/blink-with-ui/`
+
+4. Arduino. (2026). *Arduino_RouterBridge Library*. GitHub. [https://github.com/arduino-libraries/Arduino_RouterBridge](https://github.com/arduino-libraries/Arduino_RouterBridge)
+
+5. Pallets Projects. (2024). *Flask Documentation*. [https://flask.palletsprojects.com](https://flask.palletsprojects.com)
+
+6. Socket.IO. (2024). *Socket.IO Documentation*. [https://socket.io/docs](https://socket.io/docs)
+
+7. cdnjs. (2024). *Socket.IO Client Library v4.7.2*. [https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js](https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js)
+
+8. Adafruit Industries. (2024). *Adafruit PN532 NFC/RFID Library*. GitHub. [https://github.com/adafruit/Adafruit-PN532](https://github.com/adafruit/Adafruit-PN532)
+
+9. Adafruit Industries. (2024). *Adafruit Fingerprint Sensor Library*. GitHub. [https://github.com/adafruit/Adafruit-Fingerprint-Sensor-Library](https://github.com/adafruit/Adafruit-Fingerprint-Sensor-Library)
+
+10. Arduino. (2024). *Arduino UNO Q Documentation*. [https://docs.arduino.cc/hardware/uno-q](https://docs.arduino.cc/hardware/uno-q)
+
+11. Conversaiones con Gemini: [https://gemini.google.com/share/7a2621253fad](https://gemini.google.com/share/7a2621253fad)
+[https://gemini.google.com/share/ef1f6a7978c2](https://gemini.google.com/share/ef1f6a7978c2)
+[https://gemini.google.com/share/ea64b1a2190e](https://gemini.google.com/share/ea64b1a2190e)
+[https://gemini.google.com/share/652d6ab27d4f](https://gemini.google.com/share/652d6ab27d4f)
+12. Conversaciones con Claude: [https://claude.ai/share/3dffba95-4a2a-42d5-a26a-e9908c0b58cb](https://claude.ai/share/3dffba95-4a2a-42d5-a26a-e9908c0b58cb)
 
 ---
 
