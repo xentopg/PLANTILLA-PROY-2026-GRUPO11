@@ -94,8 +94,29 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
 
 
 1. **Clonar el repositorio:** `git clone https://github.com/xentopg/PLANTILLA-PROY-2026-GRUPO11.git`
-2. **Dependencias:** Listar qué librerías necesitan (ej: `pip install -r requirements.txt` o librerías de Arduino).
-3. **Ejecución:** Cómo se corre el código principal.
+2. **Dependencias:**
+- [Instalar arduino applab](https://www.arduino.cc/en/software/)
+
+**Una vez dentro de Arduino applab deberás registrar tu arduino asignandole una cuenta y contraseña**
+`nota: si te pide actualizar a la ultima versión no es necesario, yo no tuve que hacerlo`
+*Una vez instalado creas un proyecto y le instalar las librerias y bricks que aparecen aquí abajo:*
+
+ -Librerías:
+   Adafruit Fingerprint sensor library v2.1.3
+   Adafruit PN532 v1.3.4
+   Servo v1.3.0
+   ezBuzzer v1.0.2
+ -Bricks:
+   WebUI-HTML
+*vamos a necesitar editar el archivo sketch.yaml desde la terminal del computador por lo que para acceder a esta haremos uso de este programa*
+- [platform-tools-latest-windows](https://developer.android.com/tools/releases/platform-tools?hl=es-419) 
+   `también compatible con linux`
+   `Es un ejecutable que nos ayudará a acceder a la terminal del arduino para poder editar el archivo sketch.yaml`
+   
+4. **Ejecución:**
+   -Con los archivos del repositorio se deben copiar en sus respectivas carpetas dentro del proyecto en Arduino applab
+   -ya que el .yaml no se puede editar debes ingresar a la terminal del computador por el programa "platform-tools-latest-windows" una vez dentro de ella debes ejecutar el comando 
+   "adb install"
 
 ---
 
@@ -134,11 +155,13 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
 
 10. Arduino. (2024). *Arduino UNO Q Documentation*. [https://docs.arduino.cc/hardware/uno-q](https://docs.arduino.cc/hardware/uno-q)
 
-11. Conversaiones con Gemini: [https://gemini.google.com/share/7a2621253fad](https://gemini.google.com/share/7a2621253fad)
-[https://gemini.google.com/share/ef1f6a7978c2](https://gemini.google.com/share/ef1f6a7978c2)
-[https://gemini.google.com/share/ea64b1a2190e](https://gemini.google.com/share/ea64b1a2190e)
-[https://gemini.google.com/share/652d6ab27d4f](https://gemini.google.com/share/652d6ab27d4f)
-12. Conversaciones con Claude: [https://claude.ai/share/3dffba95-4a2a-42d5-a26a-e9908c0b58cb](https://claude.ai/share/3dffba95-4a2a-42d5-a26a-e9908c0b58cb)
+11. |Conversaciones con Gemini                                                                   |Conversaciones con Claude|
+    |--------------------------------------------------------------------------------------------|--------------------------
+    |[https://gemini.google.com/share/7a2621253fad](https://gemini.google.com/share/7a2621253fad)|[https://claude.ai/share/3dffba95-4a2a-42d5-a26a-e9908c0b58cb](https://claude.ai/share/3dffba95-4a2a-42d5-a26a-e9908c0b58cb)|
+    |[https://gemini.google.com/share/ef1f6a7978c2](https://gemini.google.com/share/ef1f6a7978c2)|
+    |[https://gemini.google.com/share/ea64b1a2190e](https://gemini.google.com/share/ea64b1a2190e)|
+    |[https://gemini.google.com/share/652d6ab27d4f](https://gemini.google.com/share/652d6ab27d4f)|
+    
 
 ---
 
@@ -147,4 +170,4 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
 > *Espacio para dejar cualquier comentario útil, como pendientes, acuerdos del grupo, consideraciones especiales, etc.*
 
 Como equipo consideramos que el prototipo creado es consecuente con lo planteado y es un gran avance en nuestra experiencia ya que logramos aprender bastante trbajando en ello, pese a los contratiempos y dificultades que enfrentamos como la falta de conocimiento acerca de electrónica y programación y el abandono de uno de nuestros compañeros, como equipo nos sentimos realizados con nuestro proyecto.
-Aún así hay cosas tuvimos que dejar en el tintero por falta de tiempo, como por ejemplo implementar un modo que ahorre más energía e implementar una carga por pines magnéticos para evitar el uso de "USB killer" contra Xentlock, por parte de la web sería implementar metodo de cuentas y usuarios para que sea seguro abrir la página web a una red pública y de esta manera no sería necesario estar conectado a la misma red además de no perder control o seguridad al momento de utilizar el candado 
+Aún así hay cosas tuvimos que dejar en el tintero por falta de tiempo, como por ejemplo implementar un modo que ahorre más energía e implementar una carga por pines magnéticos para evitar el uso de "USB killer" contra Xentlock, por parte de la web sería implementar metodo de cuentas y usuarios para que sea seguro abrir la página web a una red pública y de esta manera no sería necesario estar conectado a la misma red además de no perder control o seguridad al momento de utilizar el candado. 
