@@ -1,0 +1,69 @@
+#include <Adafruit_Fingerprint.h>
+
+// Forzamos el uso del puerto serial nativo por hardware de la UNO Q
+Adafruit_Fingerprint finger = Adafruit_Fingerprint(&Serial1);
+
+void setup() {
+  Serial.begin(9600);
+  delay(3000); // Retraso de seguridad para sincronizar el monitor de Arduino Lab
+  
+  Serial.println("--- SISTEMA XENTLOCK: MODO LECTOR DE ACCESO ---");
+
+  // Arrancamos el sensor de huellas
+  Serial1.begin(57600);
+  delay(1000);
+  
+  if (finger.verifyPassword()) {
+    Serial.println("-> Lector AS608 en línea y listo.");
+  } else {
+    Serial.println("-> ERROR: No se detecta el hardware del lector.");
+    while (1) { delay(1); }
+  }
+  
+  Serial.println("Esperando que se coloque un dedo sobre el cristal...");
+}
+
+void loop() {
+  // Llamamos a la función que revisa constantemente el lector
+  int id_detectado = consultarLector();
+  
+  if (id_detectado > 0) {
+    Serial.print("\n[ACCESO CONCEDIDO] Bienvenido Usuario ID #");
+    Serial.println(id_detectado);
+    
+    // Aquí es donde más adelante añadiremos la orden física:
+    // "Mover servomotor a 180 grados para abrir el candado"
+    
+    delay(5000); // Mantiene el sistema abierto por 5 segundos antes de volver a bloquear
+    Serial.println("\nCerrando cerrojo... Esperando nueva huella...");
+  }
+  
+  delay(50); // Pequeña pausa para estabilidad del procesador Qualcomm
+}
+
+// Función encargada de capturar, procesar y buscar la huella en la memoria flash
+int consultarLector() {
+  // Intentar tomar una captura del cristal
+  uint8_t p = finger.getImage();
+  if (p != FINGERPRINT_OK)  return -1; // Si no hay dedo, regresa de inmediato en silencio
+
+  // Convertir la imagen a características
+  p = finger.image2Tz(1);
+  if (p != FINGERPRINT_OK) return -1;
+
+  // Buscar en toda la base de datos interna si coincide con algún ID guardado
+  p = finger.fingerFastSearch();
+  if (p == FINGERPRINT_OK) {
+    // ¡Encontrado! Retorna el número de ID que detectó
+    Serial.print("Huella reconocida con una precisión del "); 
+    Serial.print(finger.confidence); Serial.println("%");
+    return finger.fingerID;
+  } else if (p == FINGERPRINT_NOTFOUND) {
+    Serial.println("\n[ACCESO DENEGADO] Huella no registrada en el sistema.");
+    delay(2000); // Penalización de tiempo para evitar intentos rápidos maliciosos
+    return -1;
+  } else {
+    Serial.println("Error de lectura física.");
+    return -1;
+  }
+}

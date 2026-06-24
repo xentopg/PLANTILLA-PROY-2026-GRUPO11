@@ -1,0 +1,84 @@
+#include <Adafruit_Fingerprint.h>
+#include <Servo.h>
+
+// Usamos Serial1 para el sensor en la Arduino UNO Q (Pines RX1 y TX1)
+Adafruit_Fingerprint finger = Adafruit_Fingerprint(&Serial1);
+Servo myservo;
+
+const int SERVO_PIN = 9; // Pin digital para la señal del servo
+const int LED_PIN = 7;   // Pin digital asignado para el LED verde
+
+void setup() {
+  Serial.begin(9600);
+  
+  // Espera fija de seguridad para evitar bloqueos en el Monitor Serie de Arduino Lab
+  delay(3000); 
+  Serial.println("\n--- XENTLOCK: SISTEMA DE ACCESO CONTROLADO ---");
+
+  // Configurar el pin del LED como salida
+  pinMode(LED_PIN, OUTPUT);
+  digitalWrite(LED_PIN, LOW); // Asegurar que inicie apagado
+
+  // Inicializar el Servomotor
+  myservo.attach(SERVO_PIN);
+  myservo.write(180); // Estado inicial: Bloqueado por defecto a 180°
+  Serial.println("[INFO] Servomotor inicializado y BLOQUEADO (180°). LED apagado.");
+
+  // Configurar la velocidad del sensor de huellas AS608
+  Serial1.begin(57600);
+  delay(500);
+  
+  if (finger.verifyPassword()) {
+    Serial.println("[OK] Sensor de huellas AS608 detectado.");
+  } else {
+    Serial.println("[ERROR] No se encuentra el sensor de huellas :(");
+    while (1) { delay(1); }
+  }
+
+  Serial.println("Esperando que se coloque un dedo sobre el cristal...");
+}
+
+void loop() {
+  // Intentar obtener la lectura del dedo de forma continua
+  int result = getFingerprintID();
+  
+  // Si el resultado es una coincidencia válida (ID mayor que 0)
+  if (result > 0) {
+    Serial.print("[ACCESO CONCEDIDO] Bienvenido Usuario ID #");
+    Serial.println(result);
+    
+    // ACCIÓN DE APERTURA E INDICACIÓN LUMINOSA
+    Serial.println("Desbloqueando cerrojo... Moviendo a 90° y encendiendo LED.");
+    digitalWrite(LED_PIN, HIGH); // Enciende el LED verde
+    myservo.write(90);           // Mueve el servo a 90°
+    
+    // Mantener abierto y encendido durante 4 segundos completos
+    delay(7000); 
+    
+    // ACCIÓN DE CIERRE Y APAGADO AUTOMÁTICO
+    Serial.println("Tiempo agotado. Cerrando cerrojo... Retornando a 180° y apagando LED.");
+    myservo.write(180);          // Retorna el servo a 180°
+    digitalWrite(LED_PIN, LOW);  // Apaga el LED verde
+    Serial.println("\nEsperando nueva huella...");
+  }
+  
+  delay(50); // Pequeña pausa para no saturar el procesador
+}
+
+// Función auxiliar para procesar y validar de forma continua
+int getFingerprintID() {
+  uint8_t p = finger.getImage();
+  if (p != FINGERPRINT_OK) return -1; // No hay dedo o hay error de lectura
+
+  p = finger.image2Tz();
+  if (p != FINGERPRINT_OK) return -1; // Error al convertir la imagen
+
+  p = finger.fingerFastSearch();
+  if (p == FINGERPRINT_OK) {
+    // Retorna el ID de la huella que coincide en la memoria flash
+    return finger.fingerID; 
+  } else {
+    Serial.println("[ACCESO DENEGADO] Huella no registrada en el sistema.");
+    return -1;
+  }
+}
