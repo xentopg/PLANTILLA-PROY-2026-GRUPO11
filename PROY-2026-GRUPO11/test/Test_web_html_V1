@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Xentlock Control</title>
+</head>
+<body>
+    <h1>Xentlock</h1>
+    <p>Estado del sistema:</p>
+    <h2>Servidor funcionando</h2>
+</body>
+</html>
