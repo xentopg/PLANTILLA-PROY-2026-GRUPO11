@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Xentlock Control</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; padding-top: 50px; }
+        .btn { padding: 15px; margin-top: 15px; font-size: 1.1em; font-weight: bold; color: white; border: none; cursor: pointer; width: 100%; }
+        .tarjeta-usuario { background-color: #f8f9fa; border-left: 5px solid #3498db; padding: 15px; margin-top: 12px; text-align: left; }
+    </style>
+</head>
+<body>
+    <h1>Xentlock</h1>
+    <p>Estado del sistema:</p>
+    <h2 id="txt-estado">{{ estado }}</h2>
+
+    <button class="btn" style="background-color: #2ecc71;" onclick="enviarComando('abrir')">🔓 ABRIR CANDADO</button>
+    <button class="btn" style="background-color: #e74c3c;" onclick="enviarComando('cerrar')">🔒 CERRAR CANDADO</button>
+
+    <div style="margin-top: 40px; text-align: left; display: inline-block; width: 80%;">
+        <h3>Usuarios Registrados</h3>
+        {% for usuario in usuarios %}
+        <div class="tarjeta-usuario">
+            <strong>👤 {{ usuario.nombre }}</strong><br>
+            <small>{{ usuario.metodo }} - {{ usuario.id_sensor }}</small>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div style="margin-top: 30px; text-align: left; display: inline-block; width: 80%;">
+        <h3>Registrar Nuevo Usuario</h3>
+        <input type="text" id="input-nombre" placeholder="Ej: Lionel Messi" style="width: 100%; padding: 10px;">
+        <button onclick="registrarUsuario()" class="btn" style="background-color: #1e88e5;">➕ GUARDAR EN XENTLOCK</button>
+    </div>
+
+    <script>
+        function enviarComando(accion) {
+            fetch('api/' + accion, {method: 'POST'})
+                .then(response => response.json())
+                .then(data => { document.getElementById('txt-estado').innerText = data.nuevo_estado; });
+        }
+
+        function registrarUsuario() {
+            let nombreIngresado = document.getElementById('input-nombre').value;
+            if (nombreIngresado.trim() === "") return alert("Escribe un nombre");
+
+            fetch('/api/agregar', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ nombre: nombreIngresado })
+            })
+            .then(response => response.json())
+            .then(data => { if (data.status === "success") location.reload(); });
+        }
+    </script>
+</body>
+</html>
