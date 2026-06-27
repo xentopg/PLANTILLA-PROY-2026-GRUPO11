@@ -116,8 +116,8 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
    `también compatible con linux`
    `Es un ejecutable que nos ayudará a acceder a la terminal del arduino para poder editar el archivo sketch.yaml`
    
-4. **Ejecución:**
-   >> Pasos a seguir:
+3. **Ejecución:**
+  >> Pasos a seguir:
    *Paso 1 -- Lo primero es, como fue mencionado anteriormente, tener instalado el Arduino Lab. Una vez dentro de este, debes abrir tu proyecto.
    *Paso 2 -- Busca el ícono *>_* en la barra inferior izquierda, justo al lado del nombre de tu proyecto. Tras hacer click en este, se abrira una ventana con un fondo negro, esta será la terminal.
    *Paso 3 -- En la terminal deberas escribir el siguiente comando y ten en cuenta lo siguiente:
