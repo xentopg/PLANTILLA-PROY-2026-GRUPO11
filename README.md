@@ -11,7 +11,7 @@ Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* �
 
 ## 📝 Descripción breve del proyecto
 
-> Xentlock, es un dispositivo capaz de mantener seguras tus pertenencias, siendo este completamente digital, sin ranuras a llaves corrientes, solo es posible desbloquearlo mediante clave NFC, Huella digital o su Página web. El objetivo de este proyecto es reforzar la seguridad de un candado convencional, integrando funciones que un candado convencional no posee y eliminando sus vulnerabilidades físicas. Con las tecnologías utilizadas buscamos darle una opción más fresca y renovada a las personas ofreciendoles una alternativa extra, un dispositivo que no fuera complicado de usar y que poseea más de un método de desbloqueo en caso de emergencias. 
+> Xentlock, es un dispositivo capaz de mantener seguras tus pertenencias, siendo este completamente digital, sin ranuras a llaves corrientes, solo es posible desbloquearlo mediante clave NFC, Huella digital o su Página web. El objetivo de este proyecto es reforzar la seguridad de un candado convencional, integrando funciones que un candado convencional no posee y eliminando sus vulnerabilidades físicas. Con las tecnologías utilizadas buscamos darle una opción más fresca y renovada a las personas ofreciéndoles una alternativa extra, un dispositivo que no fuera complicado de usar y que posea más de un método de desbloqueo en caso de emergencias. 
 
 ---
 
@@ -75,7 +75,7 @@ Por limitaciones de tiempo e inexperiencia al momento de programar y utilizar Ar
 
 -Duración de la batería 
 
- *(El prototipo si bien cuenta con una grán capacidad de batería esta es límitada, por lo que queda como desafío a futuro la optimización de la batería en general)*
+ *(El prototipo si bien cuenta con una gran capacidad de batería esta es limitada, por lo que queda como desafío a futuro la optimización de la batería en general)*
 
 -Aplicación independiente
 
@@ -141,7 +141,7 @@ Por limitaciones de tiempo e inexperiencia al momento de programar y utilizar Ar
   > Pasos a seguir:
   - Paso 1: Lo primero es, como fue mencionado anteriormente, tener instalado el Arduino Lab. Una vez dentro de este, debes abrir tu proyecto.
   
-  - Paso 2: Tras la instalación de las librerías, se crearán unas carpetas llamadas "sketch" y "python". Ahora debes adiconalmente crear una carpeta llamada "assets"
+  - Paso 2: Tras la instalación de las librerías, se crearán unas carpetas llamadas "sketch" y "python". Ahora debes adicionalmente crear una carpeta llamada "assets"
   
   - Paso 3: Deberás copiar los archivos del repositorio que se ubican en la carpeta /src, Dentro de la carpeta que creaste manualmente(assets) irá el archivo "html", dentro de la carpeta python irá el archivo ".py", y dentro de la carpeta sketch (que se subdividirá en dos archivos) se deberá insertar el código ".ino" en su respectivo archivo (esta es la parte del microcontrolador en c++) y finalmente en el ".yaml" (que le explica al arduino cómo comunicarse con la web)vamos a tener que editarlo desde la terminal.
   
@@ -227,5 +227,5 @@ consideraciones al momento de utilizar el prototipo "Xentlock":
 - Para acceder a la página web es necesario estr conectado a la misma red wifi que el Arduino (No funciona con Eduroam).
 - Puede que algunas conversaciones con Gemini o Claude caduquen una vez transcurrido un plazo.
 
-Como equipo consideramos que el prototipo creado es consecuente con lo planteado y es un gran avance en nuestra experiencia ya que logramos aprender bastante trbajando en ello, pese a los contratiempos y dificultades que enfrentamos como la falta de conocimiento acerca de electrónica y programación y el abandono de uno de nuestros compañeros, como equipo nos sentimos realizados con nuestro proyecto.
+Como equipo consideramos que el prototipo creado es consecuente con lo planteado y es un gran avance en nuestra experiencia ya que logramos aprender bastante trabajando en ello, pese a los contratiempos y dificultades que enfrentamos como la falta de conocimiento acerca de electrónica y programación y el abandono de uno de nuestros compañeros, como equipo nos sentimos realizados con nuestro proyecto.
 Aún así hay cosas tuvimos que dejar en el tintero por falta de tiempo, como por ejemplo implementar un modo que ahorre más energía e implementar una carga por pines magnéticos para evitar el uso de "USB killer" contra Xentlock, por parte de la web sería implementar metodo de cuentas y usuarios para que sea seguro abrir la página web a una red pública y de esta manera no sería necesario estar conectado a la misma red además de no perder control o seguridad al momento de utilizar el candado. Por lo que está en nuestros planes futuros cubrir estos aspectos si es posible. 
