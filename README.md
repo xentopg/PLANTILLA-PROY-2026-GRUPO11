@@ -23,7 +23,8 @@ Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* �
 ## 🎯 Objetivos
 
 - Objetivo general:
-  -Nuestro objetivo principal es rediseñar el candado convencional e implementar un sistema de control de acceso inteligente (utilizando Arduino Uno Q) que integre tecnologías de identificación para garantizar la mayor seguridad posible para un dispositivo de cierre físico (el candado), también incluyendo un sistema de alerta en caso de golpe o abertura no autorizada. 
+  -Nuestro objetivo principal es rediseñar el candado convencional e implementar un sistema de control de acceso inteligente (utilizando Arduino Uno Q) que integre tecnologías de identificación para garantizar la mayor seguridad posible para un dispositivo de cierre físico (el candado), también incluyendo un sistema de alerta en caso de golpe o abertura no autorizada.
+
 - Objetivos específicos:
   - Obtener los componentes necesarios. 
   - Aprender a utilizar Arduino Lab. 
@@ -49,29 +50,43 @@ Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* �
 Dentro de los aspectos que consideramos imprescindibles para llevar a cabo el prototipo de "Xentlock" estan:
 
 -Autenticación dual por módulos 
+
 *(Cuenta con la implementación de un sistema de apertura compatible tanto con huella dactilar como con el uso de NFC)* 
 
--Gestión de usuarios (localmente) 
+-Gestión de usuarios (localmente)
+
 *(Capacidad de registrar, almacenar y validar diferentes huellas dactilares y etiquetas NFC autorizadas en la memoria local del sistema)* 
 
 -Autonomía energética 
+
 *(Powerbank de alta capacidad, lo que garantiza la portabilidad del prototipo y su funcionamiento inalámbrico)*
 
 -Interfaz web
-*(Capacidad de abrir, cerrar y monitorear el candado en tiempo real desde una página web que esté vinculada con él)*
+
+ *(Capacidad de abrir, cerrar y monitorear el candado en tiempo real desde una página web que esté vinculada con él)*
 
 > ¿Qué limitaciones presenta? 
 
 Por limtaciones de tiempo e inexperiencia al momento de programar y utilizar Arduino UNO Q tuvimos que dejar algunas de nuestras ideas en el papel y llegar a concretarlas(por el momento) como lo son:
 
 -Resistencia climática 
-*(No hay certeza de que el prototipo pueda aguantar condiciones climáticas como por ejemplo la lluvia o temperaturas extremas)* 
+ 
+ *(No hay certeza de que el prototipo pueda aguantar condiciones climáticas como por ejemplo la lluvia o temperaturas extremas)* 
 
 -Duración de la batería 
-*(El prototipo si bien cuenta con una grán capacidad de batería esta es límitada, por lo que queda como desafío a futuro la optimización de la batería en general)*
 
--Estado en tiempo real 
-Otro desafío para resolver a futuro sería la vinculación del candado con una app, en la cual se pueda ver la batería restante, la gestión de las huellas, entre otras.
+ *(El prototipo si bien cuenta con una grán capacidad de batería esta es límitada, por lo que queda como desafío a futuro la optimización de la batería en general)*
+
+-Aplicación independiente
+
+ *(Otro desafío para resolver a futuro sería la vinculación del candado con una app, en la cual se pueda ver la batería restante, la gestión de las huellas, entre otras)*.
+ -Diseño Final y comprimido
+
+ *(Lograr obtener un diseño más compacto y que sea más fácil de transportar)*
+
+ -Carga por pines magnéticos
+ 
+ *(Tenemos contemplado que una carga por pines magnéticos podría reducir su posibilidad de sabotaje, como el uso de un USB killer)*
 
 ---
 
@@ -128,12 +143,12 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
   
   - Paso 2: Tras la instalación de las librerías, se crearán unas carpetas llamadas "sketch" y "python". Ahora debes adiconalmente crear una carpeta llamada "assets"
   
-  - Paso 3: Dentro de la carpeta assets irá el "html", dentro de la carpeta python irá el archivo ".py", y dentro de la carpeta sketch (que se subdividirá en archivos) va el archivo "sketch.ino" (C++ y microcontrolador).
+  - Paso 3: Deberás copiar los archivos del repositorio que se ubican en la carpeta /src, Dentro de la carpeta que creaste manualmente(assets) irá el archivo "html", dentro de la carpeta python irá el archivo ".py", y dentro de la carpeta sketch (que se subdividirá en dos archivos) se deberá insertar el código ".ino" en su respectivo archivo (esta es la parte del microcontrolador en c++) y finalmente en el ".yaml" (que le explica al arduino cómo comunicarse con la web)vamos a tener que editarlo desde la terminal.
   
   - Paso 4: Para el "sketch.yaml", busca el ícono *>_* en la barra inferior izquierda, justo al lado del nombre de tu proyecto. Tras hacer click en este, se abrira una ventana con un fondo negro, esta será la terminal.
   
   - Paso 5: En la terminal deberas escribir el siguiente comando y ten en cuenta lo siguiente:
-   I. En el comando, reemplaza NOMBRE-DE-TU-PROYECTO por el nombre exacto de tu proyecto tal como aparece en el AppLab.
+   I. En el comando, reemplaza NOMBRE-DE-TU-PROYECTO por el nombre exacto de tu proyecto tal como aparece en el Arduino AppLab.
    II. Comando: nano /home/arduino/ArduinoApps/NOMBRE-DE-TU-PROYECTO/sketch/sketch.yaml
    
   - Paso 6: Tras eso, se abrirá el archivo y deberás usar las flechas del teclado para moverte hasta el final, después de la línea que dice "default_profile: default."
@@ -146,13 +161,12 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
     returns: void
 
   - Paso 8: Ahora presionas *Ctrl+O* para guardar, luego *Enter* para confirmar. Luego presiona *Ctrl+X* para salir del editor.
-  - Paso 9: Para finalizar, en el AppLab presiona *Stop* y luego *Run* (usualmente la primera vez se demorará, pero mas adelante sería a una velocidad mas prudente)
+  - Paso 9: Para finalizar, en el Arduino appLab presiona *Stop* y luego *Run* (usualmente la primera vez que se ejecute se tardará en arrancar, pero conforme se va ejecutando el tiempo de iniciación se reduce drasticamente)
     
    > Notas adicionales:
    - Asegurarse que esté corriendo en 9600 baudios
    - Con los archivos del repositorio se deben copiar en sus respectivas carpetas dentro del proyecto en Arduino applab
-   - El yaml no se puede editar directamente, por lo que si o si se debe hacer desde la terminal del Arduino abierta desde el Applab.
-   "adb install"
+   - El yaml no se puede editar directamente, por lo que si o si se debe hacer desde la terminal del Arduino abierta desde el Arduino Applab.
    - Si no sabes el nombre exacto de tu proyecto, puedes escribir este comando en la terminal para que te muestra todos los proyectos disponibles:
      ls /home/arduino/ArduinoApps/
 ---
