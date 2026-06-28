@@ -1,0 +1,252 @@
+[
+    {
+        "hora": "15/06/2026 21:21:11",
+        "metodo": "Huella Digital #1",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 21:21:02",
+        "metodo": "Huella Digital #1",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 21:19:46",
+        "metodo": "Celular Vicente (NFC)",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 21:19:35",
+        "metodo": "Tarjeta C NFC",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 21:19:32",
+        "metodo": "Tarjeta no autorizada",
+        "tipo": "❌ Acceso denegado"
+    },
+    {
+        "hora": "15/06/2026 21:19:23",
+        "metodo": "Tarjeta A NFC",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 21:19:13",
+        "metodo": "Tarjeta A NFC",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 21:19:09",
+        "metodo": "Tarjeta no autorizada",
+        "tipo": "❌ Acceso denegado"
+    },
+    {
+        "hora": "15/06/2026 21:19:06",
+        "metodo": "Tarjeta no autorizada",
+        "tipo": "❌ Acceso denegado"
+    },
+    {
+        "hora": "15/06/2026 21:18:57",
+        "metodo": "Amiibo Peach",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:52:13",
+        "metodo": "Amiibo Peach",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:50:39",
+        "metodo": "Amiibo Peach",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:49:40",
+        "metodo": "Amiibo Peach",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:49:32",
+        "metodo": "Amiibo Peach",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:47:10",
+        "metodo": "Huella Digital #2",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:47:00",
+        "metodo": "Celular Vicente (NFC)",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:46:42",
+        "metodo": "Tarjeta no autorizada",
+        "tipo": "❌ Acceso denegado"
+    },
+    {
+        "hora": "15/06/2026 14:46:37",
+        "metodo": "Tarjeta no autorizada",
+        "tipo": "❌ Acceso denegado"
+    },
+    {
+        "hora": "15/06/2026 14:46:35",
+        "metodo": "Tarjeta no autorizada",
+        "tipo": "❌ Acceso denegado"
+    },
+    {
+        "hora": "15/06/2026 14:46:27",
+        "metodo": "Tarjeta A NFC",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:46:20",
+        "metodo": "Página Web",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:46:19",
+        "metodo": "Página Web",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:39:58",
+        "metodo": "Página Web",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:36:02",
+        "metodo": "Página Web",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:30:20",
+        "metodo": "Tarjeta C NFC",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:26:14",
+        "metodo": "Huella Digital #2",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:26:03",
+        "metodo": "Amiibo Peach",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:25:13",
+        "metodo": "Tarjeta C NFC",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:25:09",
+        "metodo": "Página Web",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:25:04",
+        "metodo": "Página Web",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:22:57",
+        "metodo": "Página Web",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:22:47",
+        "metodo": "Página Web",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:22:38",
+        "metodo": "Tarjeta A NFC",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:20:27",
+        "metodo": "Huella Digital #1",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:20:16",
+        "metodo": "Huella Digital #1",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:16:00",
+        "metodo": "Tarjeta C NFC",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:14:30",
+        "metodo": "Página Web",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:11:27",
+        "metodo": "Amiibo Peach",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:11:18",
+        "metodo": "Celular Vicente (NFC)",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:11:07",
+        "metodo": "Huella Digital #1",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:10:39",
+        "metodo": "Página Web",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:10:36",
+        "metodo": "Tarjeta C NFC",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:10:33",
+        "metodo": "Página Web",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:10:33",
+        "metodo": "Tarjeta C NFC",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:10:30",
+        "metodo": "Tarjeta C NFC",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:10:23",
+        "metodo": "Tarjeta no autorizada",
+        "tipo": "❌ Acceso denegado"
+    },
+    {
+        "hora": "15/06/2026 14:10:15",
+        "metodo": "Tarjeta A NFC",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:10:09",
+        "metodo": "Tarjeta no autorizada",
+        "tipo": "❌ Acceso denegado"
+    },
+    {
+        "hora": "15/06/2026 14:10:01",
+        "metodo": "Amiibo Peach",
+        "tipo": "✅ Acceso concedido"
+    },
+    {
+        "hora": "15/06/2026 14:09:03",
+        "metodo": "Tarjeta no autorizada",
+        "tipo": "❌ Acceso denegado"
+    }
+]
