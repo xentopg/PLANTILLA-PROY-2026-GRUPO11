@@ -67,7 +67,7 @@ Dentro de los aspectos que consideramos imprescindibles para llevar a cabo el pr
 
 > ¿Qué limitaciones presenta? 
 
-Por limtaciones de tiempo e inexperiencia al momento de programar y utilizar Arduino UNO Q tuvimos que dejar algunas de nuestras ideas en el papel y llegar a concretarlas(por el momento) como lo son:
+Por limitaciones de tiempo e inexperiencia al momento de programar y utilizar Arduino UNO Q tuvimos que dejar algunas de nuestras ideas en el papel y llegar a concretarlas(por el momento) como lo son:
 
 -Resistencia climática 
  
@@ -162,17 +162,20 @@ Por limtaciones de tiempo e inexperiencia al momento de programar y utilizar Ard
 
   - Paso 8: Ahora presionas *Ctrl+O* para guardar, luego *Enter* para confirmar. Luego presiona *Ctrl+X* para salir del editor.
   - Paso 9: Para finalizar, en el Arduino appLab presiona *Stop* y luego *Run* (usualmente la primera vez que se ejecute se tardará en arrancar, pero conforme se va ejecutando el tiempo de iniciación se reduce drasticamente)
+  - Paso 10: Una vez funcionando correctamente el proyecto puedes regresar al menú de inicio de Arduino Applab y en los 3 puntitos que aparece en la esquina superior derecha en tu proyecto activar la opción "run as startup", esto hará que al recibir energía se empiece a ejecutar el código de tu proyecto, sin necesidad del computador pero si de wifi para que la página web funcione
+  - Paso 11: Disfrutar y explorar el alcance del proyecto :D
     
    > Notas adicionales:
-   - Asegurarse que esté corriendo en 9600 baudios
+   - Asegurarse que el código esté corriendo en 9600 baudios
    - Con los archivos del repositorio se deben copiar en sus respectivas carpetas dentro del proyecto en Arduino applab
    - El yaml no se puede editar directamente, por lo que si o si se debe hacer desde la terminal del Arduino abierta desde el Arduino Applab.
    - Si no sabes el nombre exacto de tu proyecto, puedes escribir este comando en la terminal para que te muestra todos los proyectos disponibles:
-     ls /home/arduino/ArduinoApps/
+     ls /home/arduino/ArduinoApps
+   -  [Video explicativo del funcionamiento](https://youtu.be/0hnv8rGY4yY)
 ---
 
 ## 📐 Diseño del Sistema
-![Diagrama de Conexiones](./PROY-2026-GRUPO11/assets/diagrama_conexiones.png)
+![Diagrama de Conexiones](./assets/diagrama_conexiones.png)
 
 *Explicacion grafica de como es la conexion entre el microcontrolador y los sensores*
 
@@ -219,6 +222,10 @@ Por limtaciones de tiempo e inexperiencia al momento de programar y utilizar Ard
 ## 📌 Notas adicionales
 
 > *Espacio para dejar cualquier comentario útil, como pendientes, acuerdos del grupo, consideraciones especiales, etc.*
+consideraciones al momento de utilizar el prototipo "Xentlock":
+
+- Para acceder a la página web es necesario estr conectado a la misma red wifi que el Arduino (No funciona con Eduroam).
+- Puede que algunas conversaciones con Gemini o Claude caduquen una vez transcurrido un plazo.
 
 Como equipo consideramos que el prototipo creado es consecuente con lo planteado y es un gran avance en nuestra experiencia ya que logramos aprender bastante trbajando en ello, pese a los contratiempos y dificultades que enfrentamos como la falta de conocimiento acerca de electrónica y programación y el abandono de uno de nuestros compañeros, como equipo nos sentimos realizados con nuestro proyecto.
-Aún así hay cosas tuvimos que dejar en el tintero por falta de tiempo, como por ejemplo implementar un modo que ahorre más energía e implementar una carga por pines magnéticos para evitar el uso de "USB killer" contra Xentlock, por parte de la web sería implementar metodo de cuentas y usuarios para que sea seguro abrir la página web a una red pública y de esta manera no sería necesario estar conectado a la misma red además de no perder control o seguridad al momento de utilizar el candado. 
+Aún así hay cosas tuvimos que dejar en el tintero por falta de tiempo, como por ejemplo implementar un modo que ahorre más energía e implementar una carga por pines magnéticos para evitar el uso de "USB killer" contra Xentlock, por parte de la web sería implementar metodo de cuentas y usuarios para que sea seguro abrir la página web a una red pública y de esta manera no sería necesario estar conectado a la misma red además de no perder control o seguridad al momento de utilizar el candado. Por lo que está en nuestros planes futuros cubrir estos aspectos si es posible. 
