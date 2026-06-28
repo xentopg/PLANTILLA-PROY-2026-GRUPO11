@@ -46,14 +46,11 @@ Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* �
 -Gestión de usuarios 
 (Capacidad de registrar, almacenar y validar diferentes huellas dactilares y etiquetas NFC autorizadas en la memoria local del sistema) 
 
--Sistema de Seguridad activa 
-(Integración de un sensor de vibración para detectar intentos de manipulación forzada y activar una alarma mediante el buzzer integrado)
-
 -Autonomía energética 
 (Powerbank de alta capacidad para asegurar la portabilidad del prototipo y su funcionamiento inalámbrico) 
 
--Recarga de batería 
-(La recarga será mediante pines magnéticos, lo que soluciona problemas como USB killer, humedad o suciedad en el puerto USB) 
+-Interfaz web
+(Desde una pagina web, abrir, cerrar y gestionar diversos aspectos del candado) 
 
 > ¿Qué limitaciones presenta? 
 
@@ -113,7 +110,7 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
  -Bricks:
    WebUI-HTML
 (se instalan desde el apartado "Add brick" y "Add library")
-*vamos a necesitar editar el archivo sketch.yaml desde la terminal del computador por lo que para acceder a esta haremos uso de este programa*
+*vamos a necesitar editar el archivo sketch.yaml desde la terminal del Applab*
    
 3. **Ejecución:**
   > Pasos a seguir:
@@ -144,7 +141,7 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
    > Notas adicionales:
    - Asegurarse que esté corriendo en 9600 baudios
    - Con los archivos del repositorio se deben copiar en sus respectivas carpetas dentro del proyecto en Arduino applab
-   - Ya que el .yaml no se puede editar debes ingresar a la terminal del computador por el programa "platform-tools-latest-windows" una vez dentro de ella debes ejecutar el comando 
+   - El yaml no se puede editar directamente, por lo que si o si se debe hacer desde la terminal del Arduino abierta desde el Applab.
    "adb install"
    - Si no sabes el nombre exacto de tu proyecto, puedes escribir este comando en la terminal para que te muestra todos los proyectos disponibles:
      ls /home/arduino/ArduinoApps/
