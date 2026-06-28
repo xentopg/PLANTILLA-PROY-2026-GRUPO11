@@ -11,7 +11,9 @@ Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* �
 
 ## 📝 Descripción breve del proyecto
 
-> Xentlock, es un dispositivo capaz de mantener seguras tus pertenencias, siendo este completamente digital, sin ranuras a llaves corrientes, solo es posible desbloquearlo mediante clave NFC, Huella digital y Página web. El objetivo de este proyecto es reforzar la seguridad de un candado convencional, integrando funciones que un candado convencional no posee y eliminando sus vulnerabilidades físicas. Con las tecnologías utilizadas buscamos darle una opción más fresca y renovada a las personas ofreciendoles una alternativa extra, un dispositivo que no fuera complicado de usar y que poseea más de un método de desbloqueo en caso de emergencias. 
+> Xentlock, es un dispositivo capaz de mantener seguras tus pertenencias, siendo este completamente digital, sin ranuras a llaves corrientes, solo es posible desbloquearlo mediante clave NFC, Huella digital o su Página web. El objetivo de este proyecto es reforzar la seguridad de un candado convencional, integrando funciones que un candado convencional no posee y eliminando sus vulnerabilidades físicas. Con las tecnologías utilizadas buscamos darle una opción más fresca y renovada a las personas ofreciendoles una alternativa extra, un dispositivo que no fuera complicado de usar y que poseea más de un método de desbloqueo en caso de emergencias. 
+
+---
 
 ## 🔐Video de presentación
 [https://youtu.be/0hnv8rGY4yY](https://youtu.be/0hnv8rGY4yY)
@@ -23,42 +25,50 @@ Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* �
 - Objetivo general:
   -Nuestro objetivo principal es rediseñar el candado convencional e implementar un sistema de control de acceso inteligente (utilizando Arduino Uno Q) que integre tecnologías de identificación para garantizar la mayor seguridad posible para un dispositivo de cierre físico (el candado), también incluyendo un sistema de alerta en caso de golpe o abertura no autorizada. 
 - Objetivos específicos:
-  - Obtener los componentes necesarios 
-  - Aprender a utilizar Arduino Lab 
-  - Crear esquema de conexiones 
-  - Realizar las conexiones correctamente para evitar percances 
-  - Configurar los sensores y piezas por separado (NFC, Huella digital, microservomotor, buzzer) 
-  - Ir integrando los sensores a un sistema más complejo hasta completar el circuito final 
-  - Utilizar la powerbank como fuente de energía para el dispositivo 
-  - Compatibilizar la fuente de energía con el Arduino UNO Q
-  - Diseñar la pagina web para el proyecto
-  - Enlazar la placa con la interfaz web para que el Arduino Uno Q reciba la señal enviada desde la web y active el Servomotor
+  - Obtener los componentes necesarios. 
+  - Aprender a utilizar Arduino Lab. 
+  - Crear esquema de conexiones. 
+  - Realizar las conexiones progresivamente para evitar percances. 
+  - Programar el reconocimiento de los componentes por individual (PN532(NFC), AS608(Huella digital), microservomotor, buzzer). 
+  - Identificar el código ID de las claves de acceso mediante un código.
+  - Programar de claves de acceso en los sensores AS608 y PN532.
+  - Establecer que las claves de acceso interactúen con el microservomotor y el buzzer.
+  - Construir un código más complejo integrando los sensores y componentes programados previamente hasta completar el circuito final.
+  - Configurar en el Arduino applab que se ejecute el código cuando el Arduino UNO Q recibe energía y de esta manera se pueda utilizar la powerbank como alimentación para el dispositivo.
+  - Diseñar la base de pagina web para el proyecto con visual studio code.
+  - Integrar la página web dentro del Arduino UNO Q para que esta sea capaz de correr en él.
+  - Enlazar la placa con la interfaz web de manera que el Arduino Uno Q reciba la señal enviada desde la web e interactúe con la apertura del candado.
+  - mejorar la Página web para que se pueda monitorear en tiempo real el estado del arduino y además registrar un historial de apertura.
 
 ---
 
 ## 🧩 Alcance del proyecto
 
-> ¿Qué cubre? 
+> ¿Qué cubre?
 
--Autenticación dual 
-(Cuenta con la implementación de un sistema de apertura tanto con huella dactilar como con NFC) 
+Dentro de los aspectos que consideramos imprescindibles para llevar a cabo el prototipo de "Xentlock" estan:
 
--Gestión de usuarios 
-(Capacidad de registrar, almacenar y validar diferentes huellas dactilares y etiquetas NFC autorizadas en la memoria local del sistema) 
+-Autenticación dual por módulos 
+*(Cuenta con la implementación de un sistema de apertura compatible tanto con huella dactilar como con el uso de NFC)* 
+
+-Gestión de usuarios (localmente) 
+*(Capacidad de registrar, almacenar y validar diferentes huellas dactilares y etiquetas NFC autorizadas en la memoria local del sistema)* 
 
 -Autonomía energética 
-(Powerbank de alta capacidad para asegurar la portabilidad del prototipo y su funcionamiento inalámbrico) 
+*(Powerbank de alta capacidad, lo que garantiza la portabilidad del prototipo y su funcionamiento inalámbrico)*
 
 -Interfaz web
-(Desde una pagina web, abrir, cerrar y gestionar diversos aspectos del candado) 
+*(Capacidad de abrir, cerrar y monitorear el candado en tiempo real desde una página web que esté vinculada con él)*
 
 > ¿Qué limitaciones presenta? 
 
+Por limtaciones de tiempo e inexperiencia al momento de programar y utilizar Arduino UNO Q tuvimos que dejar algunas de nuestras ideas en el papel y llegar a concretarlas(por el momento) como lo son:
+
 -Resistencia climática 
-(No hay certeza de que el prototipo pueda aguantar condiciones climáticas como por ejemplo la lluvia) 
+*(No hay certeza de que el prototipo pueda aguantar condiciones climáticas como por ejemplo la lluvia o temperaturas extremas)* 
 
 -Duración de la batería 
-(El prototipo no cuenta con una muy larga duración, por lo que queda como desafío a futuro la optimización de la batería en general)
+*(El prototipo si bien cuenta con una grán capacidad de batería esta es límitada, por lo que queda como desafío a futuro la optimización de la batería en general)*
 
 -Estado en tiempo real 
 Otro desafío para resolver a futuro sería la vinculación del candado con una app, en la cual se pueda ver la batería restante, la gestión de las huellas, entre otras.
