@@ -112,33 +112,37 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
    ezBuzzer v1.0.2
  -Bricks:
    WebUI-HTML
+(se instalan desde el apartado "Add brick" y "Add library")
 *vamos a necesitar editar el archivo sketch.yaml desde la terminal del computador por lo que para acceder a esta haremos uso de este programa*
    
 3. **Ejecución:**
-  >> Pasos a seguir:
-
-  *Paso 1 -- Lo primero es, como fue mencionado anteriormente, tener instalado el Arduino Lab. Una vez dentro de este, debes abrir tu proyecto.
-   
-  *Paso 2 -- Busca el ícono *>_* en la barra inferior izquierda, justo al lado del nombre de tu proyecto. Tras hacer click en este, se abrira una ventana con un fondo negro, esta será la terminal.
-   
-  *Paso 3 -- En la terminal deberas escribir el siguiente comando y ten en cuenta lo siguiente:
+  > Pasos a seguir:
+  - Paso 1: Lo primero es, como fue mencionado anteriormente, tener instalado el Arduino Lab. Una vez dentro de este, debes abrir tu proyecto.
+  
+  - Paso 2: Tras la instalación de las librerías, se crearán unas carpetas llamadas "sketch" y "python". Ahora debes adiconalmente crear una carpeta llamada "assets"
+  
+  - Paso 3: Dentro de la carpeta assets irá el "html", dentro de la carpeta python irá el archivo ".py", y dentro de la carpeta sketch (que se subdividirá en archivos) va el archivo "sketch.ino" (C++ y microcontrolador).
+  
+  - Paso 4: Para el "sketch.yaml", busca el ícono *>_* en la barra inferior izquierda, justo al lado del nombre de tu proyecto. Tras hacer click en este, se abrira una ventana con un fondo negro, esta será la terminal.
+  
+  - Paso 5: En la terminal deberas escribir el siguiente comando y ten en cuenta lo siguiente:
    I. En el comando, reemplaza NOMBRE-DE-TU-PROYECTO por el nombre exacto de tu proyecto tal como aparece en el AppLab.
    II. Comando: nano /home/arduino/ArduinoApps/NOMBRE-DE-TU-PROYECTO/sketch/sketch.yaml
    
-  *Paso 4 -- Tras eso, se abrirá el archivo y deberás usar las flechas del teclado para moverte hasta el final, después de la línea que dice "default_profile: default."
-   
-  *Paso 5 --  Escribe exactamente esto (con espacios, no tabs):
+  - Paso 6: Tras eso, se abrirá el archivo y deberás usar las flechas del teclado para moverte hasta el final, después de la línea que dice "default_profile: default."
+  
+  - Paso 7: Escribe exactamente esto (con espacios, no tabs):
    rpcs:
     name: abrir
     returns: void
     name: cerrar
     returns: void
 
-  *Paso 6 -- Ahora presionas *Ctrl+O* para guardar, luego *Enter* para confirmar. Luego presiona *Ctrl+X* para salir del editor. 
+  - Paso 8: Ahora presionas *Ctrl+O* para guardar, luego *Enter* para confirmar. Luego presiona *Ctrl+X* para salir del editor.
+  - Paso 9: Para finalizar, en el AppLab presiona *Stop* y luego *Run* (usualmente la primera vez se demorará, pero mas adelante sería a una velocidad mas prudente)
     
-  *Paso 7 -- Para finalizar, en el AppLab presiona *Stop* y luego *Run*.
-    
-   >> Notas adicionales:
+   > Notas adicionales:
+   - Asegurarse que esté corriendo en 9600 baudios
    - Con los archivos del repositorio se deben copiar en sus respectivas carpetas dentro del proyecto en Arduino applab
    - Ya que el .yaml no se puede editar debes ingresar a la terminal del computador por el programa "platform-tools-latest-windows" una vez dentro de ella debes ejecutar el comando 
    "adb install"
