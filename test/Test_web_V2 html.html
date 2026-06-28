@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Xentlock Control</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding-top: 50px;
+        }
+        .btn {
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Xentlock</h1>
+    <p>Estado del sistema:</p>
+    <h2 id="txt-estado">{{ estado }}</h2>
+
+    <button class="btn" style="background-color: #2ecc71;" onclick="enviarComando('abrir')">🔓 ABRIR CANDADO</button>
+    <button class="btn" style="background-color: #e74c3c;" onclick="enviarComando('cerrar')">🔒 CERRAR CANDADO</button>
+
+    <script>
+        function enviarComando(accion) {
+            fetch('api/' + accion, { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('txt-estado').innerText = data.nuevo_estado;
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
