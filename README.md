@@ -119,20 +119,26 @@ Otro desafío para resolver a futuro sería la vinculación del candado con una 
 3. **Ejecución:**
   >> Pasos a seguir:
    *Paso 1 -- Lo primero es, como fue mencionado anteriormente, tener instalado el Arduino Lab. Una vez dentro de este, debes abrir tu proyecto.
+   
    *Paso 2 -- Busca el ícono *>_* en la barra inferior izquierda, justo al lado del nombre de tu proyecto. Tras hacer click en este, se abrira una ventana con un fondo negro, esta será la terminal.
+   
    *Paso 3 -- En la terminal deberas escribir el siguiente comando y ten en cuenta lo siguiente:
    I. En el comando, reemplaza NOMBRE-DE-TU-PROYECTO por el nombre exacto de tu proyecto tal como aparece en el AppLab.
    II. Comando: nano /home/arduino/ArduinoApps/NOMBRE-DE-TU-PROYECTO/sketch/sketch.yaml
+   
    *Paso 4 -- Tras eso, se abrirá el archivo y deberás usar las flechas del teclado para moverte hasta el final, después de la línea que dice "default_profile: default."
+   
    *Paso 5 --  Escribe exactamente esto (con espacios, no tabs):
    rpcs:
-  - name: abrir
+    name: abrir
     returns: void
-  - name: cerrar
+    name: cerrar
     returns: void
-    *Paso 6 -- Ahora presionas *Ctrl+O* para guardar, luego *Enter* para confirmar. Luego presiona *Ctrl+X* para salir del editor.
-    *Paso 7 -- Para finalizar, en el AppLab presiona *Stop* y luego *Run*.
 
+    *Paso 6 -- Ahora presionas *Ctrl+O* para guardar, luego *Enter* para confirmar. Luego presiona *Ctrl+X* para salir del editor.
+    
+    *Paso 7 -- Para finalizar, en el AppLab presiona *Stop* y luego *Run*.
+    
    >> Notas adicionales:
    - Con los archivos del repositorio se deben copiar en sus respectivas carpetas dentro del proyecto en Arduino applab
    - Ya que el .yaml no se puede editar debes ingresar a la terminal del computador por el programa "platform-tools-latest-windows" una vez dentro de ella debes ejecutar el comando 
