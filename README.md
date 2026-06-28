@@ -30,8 +30,9 @@ Repositorio del grupo 11 para el proyecto del ramo *Proyecto Inicial (IWG400)* �
   - Configurar los sensores y piezas por separado (NFC, Huella digital, microservomotor, buzzer) 
   - Ir integrando los sensores a un sistema más complejo hasta completar el circuito final 
   - Utilizar la powerbank como fuente de energía para el dispositivo 
-  - compatibilizar la fuente de energía con el Arduino UNO Q
-  - Implementación de carga por pines magnéticos (si es que queda tiempo(opcional)) 
+  - Compatibilizar la fuente de energía con el Arduino UNO Q
+  - Diseñar la pagina web para el proyecto
+  - Enlazar la placa con la interfaz web para que el Arduino Uno Q reciba la señal enviada desde la web y active el Servomotor
 
 ---
 
